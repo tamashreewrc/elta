@@ -76,6 +76,8 @@
 
         <li class="has-sub {{ (Request::is('admin/service_categories') ? 'active' : '') }}"><a href="{{ url('/') }}/admin/service_categories"><i class="fa fa-list"></i> <span>Service Categories</span></a></li>
 
+        <li class="has-sub {{ (Request::is('admin/gallery') ? 'active' : '') }}"><a href="{{ url('/') }}/admin/gallery"><i class="fa fa-picture-o"></i> <span>Gallery</span></a></li>
+
         <li class="has-sub {{ (Request::is('admin/testimonial') ? 'active' : '') }}"><a href="{{ url('/') }}/admin/testimonial"><i class="fa fa-quote-left"></i> <span>Testimonial</span></a></li>
 
         <li class="has-sub {{ (Request::is('admin/teachers') ? 'active' : '') }}"><a href="{{ url('/') }}/admin/teachers"><i class="fa fa-male"></i> <span>Teachers</span></a></li>
