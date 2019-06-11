@@ -178,8 +178,10 @@
 
   $(function () {
     $('#service_category_listings').DataTable(); // service_category_listings datatable
+    $('#gallery_type_listings').DataTable(); // gallery_type_listings datatable
 
     CKEDITOR.replace('service_category_description');
+    //CKEDITOR.replace('gallery_type_description');
 
     //Initialize Select2 Elements
     $('.select2').select2()
@@ -244,6 +246,8 @@
     $('.timepicker').timepicker({
       showInputs: false
     })
+
+
   })
 
 </script>

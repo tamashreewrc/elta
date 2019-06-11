@@ -117,6 +117,13 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get('/admin/cms/contact_us', 'ContactController@index');
     Route::post('/admin/contact_submit', 'ContactController@save_contact');
 
+    Route::get('/admin/gallery_type', 'GalleryController@gallery_type_list');
+    Route::get('/admin/gallery_type/add', 'GalleryController@gallery_type_add');
+    Route::post('/gallery_type/add_submit', 'GalleryController@gallery_type_add_submit');
+    Route::get('/admin/gallery_type/edit/{gallery_type_id}', 'GalleryController@gallery_type_edit_view');
+    Route::post('/gallery_type/edit_submit/{gallery_type_id}', 'GalleryController@gallery_type_edit_submit');
+    Route::get('/gallery_type/delete/{gallery_type_id}', 'GalleryController@gallery_type_delete');
+
 });
 
 Route::get('/', 'LandingController@index');
