@@ -124,6 +124,8 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/gallery_type/edit_submit/{gallery_type_id}', 'GalleryController@gallery_type_edit_submit');
     Route::get('/gallery_type/delete/{gallery_type_id}', 'GalleryController@gallery_type_delete');
 
+    Route::get('/admin/gallery_event', 'GalleryController@gallery_event_list');
+
 });
 
 Route::get('/', 'LandingController@index');
